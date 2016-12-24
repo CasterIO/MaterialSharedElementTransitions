@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/course_logo"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:transitionName="@string/trans_img"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+         <TextView
+            android:id="@+id/id"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:transitionName="@string/trans_num"/>
+
+        <TextView
+            android:id="@+id/content"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textSize="14sp"
+            android:transitionName="@string/trans_title"/>
+
+        <TextView
+            android:id="@+id/content_snippet"
+            style="@style/Base.TextAppearance.AppCompat.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:transitionName="@string/trans_desc"/>
+    </LinearLayout>
+
+</LinearLayout>

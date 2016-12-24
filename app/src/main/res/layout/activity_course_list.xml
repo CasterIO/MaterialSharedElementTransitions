@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="intentional.casterio.com.intentional.CourseListActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="Caster IO Course Information"/>
+
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Caption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center"
+                android:text="There are many courses available, please check them out and keep learning."/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/course_list"
+                android:name="intentional.casterio.com.intentional.CourseListFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:layoutManager="LinearLayoutManager"/>
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

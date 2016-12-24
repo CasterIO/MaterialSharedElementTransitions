@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Intentional</string>
+    <string name="title_course_detail">Course Detail</string>
+
+    <string name="trans_img">trans_img</string>
+    <string name="trans_title">trans_title</string>
+    <string name="trans_num">trans_num</string>
+    <string name="trans_desc">trans_desc</string>
+    <string name="trans_page_title">trans_page_title</string>
+
+</resources>
